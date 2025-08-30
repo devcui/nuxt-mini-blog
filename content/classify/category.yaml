@@ -1,0 +1,68 @@
+type: category
+metas:
+  - key: 前端
+    desc: 前端相关
+    no: 1
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 工程
+    desc: 工程相关
+    no: 2
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 运维
+    desc: 运维相关
+    no: 3
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 测试
+    desc: 测试相关
+    no: 4
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 后端
+    desc: 后端相关
+    no: 5
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 合规
+    desc: 合规相关
+    no: 6
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 工具
+    desc: 工具相关
+    no: 7
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 安全
+    desc: 安全相关
+    no: 8
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 管理
+    desc: 管理相关
+    no: 9
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 数据
+    desc: 数据相关
+    no: 10
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 产品
+    desc: 产品相关
+    no: 11
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
