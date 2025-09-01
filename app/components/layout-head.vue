@@ -1,7 +1,9 @@
 <script lang="ts" setup>
 import type { NavigationMenuItem } from "@nuxt/ui";
+import * as locales from '@nuxt/ui/locale'
 import { useRoute } from "vue-router";
 
+const { locale, setLocale } = useI18n()
 const route = useRoute();
 
 const items = computed<NavigationMenuItem[]>(() => [
@@ -59,26 +61,16 @@ const items = computed<NavigationMenuItem[]>(() => [
     </ClientOnly>
 
     <template #body>
-      <UNavigationMenu
-        variant="link"
-        :items="items"
-        orientation="vertical"
-        class="-mx-2.5"
-      />
+      <UNavigationMenu variant="link" :items="items" orientation="vertical" class="-mx-2.5" />
     </template>
 
     <template #right>
       <UColorModeButton />
       <UTooltip text="Open on GitHub" :kbds="['meta', 'G']">
-        <UButton
-          color="neutral"
-          variant="ghost"
-          to="https://github.com/devcui"
-          target="_blank"
-          icon="i-simple-icons-github"
-          aria-label="GitHub"
-        />
+        <UButton color="neutral" variant="ghost" to="https://github.com/devcui" target="_blank"
+          icon="i-simple-icons-github" aria-label="GitHub" />
       </UTooltip>
+      <ULocaleSelect v-model="locale" :locales="Object.values(locales)" @update:model-value="setLocale($event)" />
     </template>
   </UHeader>
 </template>
