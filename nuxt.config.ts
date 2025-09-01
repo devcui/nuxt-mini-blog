@@ -1,4 +1,3 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
@@ -6,9 +5,17 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   i18n: {
     defaultLocale: 'en',
+    strategy: "no_prefix",
     locales: [
       { code: 'en', name: 'English', file: 'en.json' },
-      { code: 'zh_cn', name: '简体中文', file: 'zh_cn.json' }
-    ]
-  }
+      { code: 'zh-CN', name: '简体中文', file: 'zh_cn.json' }
+    ],
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'all',
+      alwaysRedirect: true,
+      fallbackLocale: 'en'
+    }
+  },
 })

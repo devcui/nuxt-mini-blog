@@ -3,6 +3,7 @@ import type { ContentCollectionItem } from '@nuxt/content';
 
 const route = useRoute();
 const router = useRouter()
+const { locale } = useLocale()
 
 const type = computed<string | undefined>(() => {
   if (route.params.type) {
@@ -31,8 +32,12 @@ const limit = computed<number>({
 
 const { data: docs } = await useAsyncData(route.path + '-metas', async () => {
   if (!type.value) return []
-  return queryCollection('content').where(type.value, 'IS NOT NULL').all()
+  return queryCollection('content')
+    .where(type.value, 'IS NOT NULL')
+    .where('path', 'LIKE', `%/${locale.value.code}/%`)
+    .all()
 })
+
 
 const { data: classify } = await useAsyncData(
   route.path + '-classify',
@@ -40,6 +45,9 @@ const { data: classify } = await useAsyncData(
     if (!type.value) return []
     return await queryCollection('classify')
       .where('type', '=', type.value)
+      .andWhere(query =>
+        query.where('stem', 'LIKE', `%/${locale.value.code}/%`)
+      )
       .all()
   }
 )
@@ -84,7 +92,7 @@ const to = (doc: Partial<ContentCollectionItem>) => {
 
           <div class="space-y-2 text-center">
             <span class="block text-[clamp(1rem,2.5vw,1.5rem)] leading-snug font-semibold">{{ meta.key }} - {{ meta.desc
-            }}</span>
+              }}</span>
             <div class="flex justify-center gap-4 text-[clamp(0.75rem,1.8vw,0.9rem)]">
               <span>created: {{ meta.created }}</span>
               <span>updated: {{ meta.updated }}</span>
@@ -94,7 +102,7 @@ const to = (doc: Partial<ContentCollectionItem>) => {
           <ul class="grid grid-cols-1 gap-4 pt-4 sm:grid-cols-2 md:grid-cols-3">
             <li v-for="doc in meta.docs" :key="doc.title" class="text-[clamp(0.85rem,2vw,1rem)]">
               <u-link class="block cursor-pointer text-center  hover:underline" @click="to(doc)">{{ doc.title
-              }}</u-link>
+                }}</u-link>
             </li>
           </ul>
         </div>

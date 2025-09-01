@@ -1,6 +1,6 @@
 <template>
   <div>
-    THIS IS ABOUT
+    {{ $t('thisIsAbout') }}
   </div>
 </template>
 

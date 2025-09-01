@@ -1,0 +1,32 @@
+type: category
+metas:
+  - key: Frontend
+    desc: Frontend related
+    no: 1
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Backend
+    desc: Backend development related
+    no: 2
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Database
+    desc: Database technology related
+    no: 3
+    banner: /images/1.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: DevOps
+    desc: DevOps and system administration
+    no: 4
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Mobile
+    desc: Mobile development related
+    no: 5
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02

@@ -1,11 +1,12 @@
 <script setup lang="ts">
 const route = useRoute()
+const { locale } = useLocale()
 const { data: page } = await useAsyncData(route.path, () => queryCollection('content').path(route.path).first())
 
 const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
   return queryCollectionItemSurroundings('content', route.path, {
     fields: ['description']
-  })
+  }).andWhere(query => query.where("path", "LIKE", `%/${locale.value.code}/%`))
 })
 </script>
 

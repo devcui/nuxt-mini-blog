@@ -3,8 +3,8 @@ import type { ContentCollectionItem } from '@nuxt/content'
 
 const route = useRoute()
 const router = useRouter()
-
-const { data } = await useAsyncData(route.path, () => queryCollection("content").all())
+const { locale } = useLocale()
+const { data } = await useAsyncData(route.path, () => queryCollection("content").where("path", 'LIKE', `%/${locale.value.code}/%`).all())
 
 const docs = computed(() => {
   if (!data) return []

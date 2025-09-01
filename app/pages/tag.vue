@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 const router = useRouter()
+const { locale } = useLocale()
 const { data } = await useAsyncData(() =>
-  queryCollection("content").where("tag", "IS NOT NULL").select("tag").all()
+  queryCollection("content").where("path", 'LIKE', `%/${locale.value.code}/%`).select("tag").all()
 );
 
 const tags = computed<string[]>(() => {

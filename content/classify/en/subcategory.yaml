@@ -1,0 +1,32 @@
+type: subcategory
+metas:
+  - key: Language
+    desc: Language related
+    no: 1
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Framework
+    desc: Development frameworks
+    no: 2
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Tools
+    desc: Development tools
+    no: 3
+    banner: /images/1.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Library
+    desc: Open source libraries
+    no: 4
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Design Pattern
+    desc: Design patterns related
+    no: 5
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02

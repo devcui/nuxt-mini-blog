@@ -1,49 +1,48 @@
 <script lang="ts" setup>
 import type { NavigationMenuItem } from "@nuxt/ui";
-import * as locales from '@nuxt/ui/locale'
 import { useRoute } from "vue-router";
 
-const { locale, setLocale } = useI18n()
+const { t } = useI18n()
 const route = useRoute();
 
 const items = computed<NavigationMenuItem[]>(() => [
   {
-    label: "Tag",
+    label: t('tag'),
     to: "/tag",
     active: route.path.startsWith("/classify/tag"),
   },
   {
-    label: "Series",
+    label: t('series'),
     to: "/classify/series",
     active: route.path.startsWith("/classify/series"),
   },
   {
-    label: "Collection",
+    label: t('collection'),
     to: "/classify/collection",
     active: route.path.startsWith("/classify/collection"),
   },
   {
-    label: "Topic",
+    label: t('topic'),
     to: "/classify/topic",
     active: route.path.startsWith("/classify/topic"),
   },
   {
-    label: "Category",
+    label: t('category'),
     to: "/classify/category",
     active: route.path.startsWith("/classify/category"),
   },
   {
-    label: "Subcategory",
+    label: t('subcategory'),
     to: "/classify/subcategory",
     active: route.path.startsWith("/classify/subcategory"),
   },
   {
-    label: "Timeline",
+    label: t('timeline'),
     to: "/timeline",
     active: route.path.startsWith("/timeline"),
   },
   {
-    label: "About",
+    label: t('about'),
     to: "/about",
     active: route.path.startsWith("/about"),
   },
@@ -66,11 +65,10 @@ const items = computed<NavigationMenuItem[]>(() => [
 
     <template #right>
       <UColorModeButton />
-      <UTooltip text="Open on GitHub" :kbds="['meta', 'G']">
+      <UTooltip :text="t('openOnGithub')" :kbds="['meta', 'G']">
         <UButton color="neutral" variant="ghost" to="https://github.com/devcui" target="_blank"
           icon="i-simple-icons-github" aria-label="GitHub" />
       </UTooltip>
-      <ULocaleSelect v-model="locale" :locales="Object.values(locales)" @update:model-value="setLocale($event)" />
     </template>
   </UHeader>
 </template>

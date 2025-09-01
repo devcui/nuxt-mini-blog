@@ -1,0 +1,32 @@
+type: series
+metas:
+  - key: Learn JavaScript in 30 Days
+    desc: Learn JavaScript in 30 Days series
+    no: 1
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Vue 3 Mastery
+    desc: Vue 3 framework learning series
+    no: 2
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: React Practical Guide
+    desc: React development practice series
+    no: 3
+    banner: /images/1.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Node.js Backend Development
+    desc: Node.js backend development series
+    no: 4
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Advanced Python Programming
+    desc: Advanced Python programming series
+    no: 5
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02

@@ -3,8 +3,9 @@ import type { BlogPostProps } from '@nuxt/ui'
 
 const route = useRoute()
 const limit = ref(5)
+const { locale } = useLocale()
 
-const { data, refresh } = await useAsyncData(route.path, () => queryCollection("content").order("updated", "DESC").limit(limit.value).all())
+const { data, refresh } = await useAsyncData(route.path, () => queryCollection("content").where("path", 'LIKE', `%/${locale.value.code}/%`).order("updated", "DESC").limit(limit.value).all())
 
 const posts = computed<Array<BlogPostProps & { path: string }>>(() => {
   if (!data || !data.value) return []
@@ -36,7 +37,7 @@ const loadMore = () => {
       </UContainer>
     </UPageBody>
     <div class=" flex-col items-center justify-center my-4 text-center">
-      <u-button @click="loadMore()">Load More</u-button>
+      <u-button @click="loadMore()">{{ $t('loadMore') }}</u-button>
     </div>
   </UPage>
 </template>

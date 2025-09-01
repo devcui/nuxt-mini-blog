@@ -1,0 +1,32 @@
+type: subcategory
+metas:
+  - key: 语言
+    desc: 语言相关
+    no: 1
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 框架
+    desc: 开发框架
+    no: 2
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 工具
+    desc: 开发工具
+    no: 3
+    banner: /images/1.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 库
+    desc: 开源库
+    no: 4
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 设计模式
+    desc: 设计模式相关
+    no: 5
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02

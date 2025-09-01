@@ -2,8 +2,16 @@
 import * as locales from '@nuxt/ui/locale'
 
 const { locale } = useI18n()
-const lang = computed(() => locales[locale.value].code)
-const dir = computed(() => locales[locale.value].dir)
+
+const replacedLocale = computed(() => {
+  if (locale.value === 'zh-CN') {
+    return 'zh_cn'
+  }
+  return locale.value
+})
+
+const lang = computed(() => locales[replacedLocale.value].code)
+const dir = computed(() => locales[replacedLocale.value].dir)
 
 useHead({
   htmlAttrs: {
@@ -13,7 +21,7 @@ useHead({
 })
 </script>
 <template>
-  <u-app :locale="locales[locale]">
+  <u-app :locale="locales[replacedLocale]">
     <nuxt-layout>
       <nuxt-page />
     </nuxt-layout>

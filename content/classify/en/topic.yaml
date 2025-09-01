@@ -1,0 +1,38 @@
+type: topic
+metas:
+  - key: Programming Language
+    desc: Programming language related
+    no: 1
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Frontend Development
+    desc: Frontend development technology
+    no: 2
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Backend Development
+    desc: Backend development technology
+    no: 3
+    banner: /images/1.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Data Structure
+    desc: Data structures and algorithms
+    no: 4
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Performance Optimization
+    desc: Performance optimization techniques
+    no: 5
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Security
+    desc: Security technology
+    no: 6
+    banner: /images/1.png
+    created: 2023-01-01
+    updated: 2023-01-02

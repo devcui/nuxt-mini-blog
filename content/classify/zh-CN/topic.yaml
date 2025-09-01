@@ -1,0 +1,38 @@
+type: topic
+metas:
+  - key: 编程语言
+    desc: 编程语言相关
+    no: 1
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 前端开发
+    desc: 前端开发技术
+    no: 2
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 后端开发
+    desc: 后端开发技术
+    no: 3
+    banner: /images/1.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 数据结构
+    desc: 数据结构与算法
+    no: 4
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 性能优化
+    desc: 性能优化技术
+    no: 5
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 安全
+    desc: 安全技术
+    no: 6
+    banner: /images/1.png
+    created: 2023-01-01
+    updated: 2023-01-02

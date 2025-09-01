@@ -1,0 +1,26 @@
+type: collection
+metas:
+  - key: Frontend Recommendations
+    desc: Frontend recommendations collection
+    no: 1
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Backend Essentials
+    desc: Backend essentials collection
+    no: 2
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Full Stack Development
+    desc: Full stack development essentials
+    no: 3
+    banner: /images/1.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Tech Trends
+    desc: Technology trends collection
+    no: 4
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02

@@ -1,0 +1,32 @@
+type: series
+metas:
+  - key: 30天学会JavaScript
+    desc: 30天学会JavaScript系列
+    no: 1
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Vue 3从入门到精通
+    desc: Vue 3框架学习系列
+    no: 2
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: React 实战指南
+    desc: React开发实战系列
+    no: 3
+    banner: /images/1.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Node.js 后端开发
+    desc: Node.js后端开发系列
+    no: 4
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: Python 编程进阶
+    desc: Python编程进阶系列
+    no: 5
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02

@@ -1,0 +1,26 @@
+type: collection
+metas:
+  - key: 前端推荐
+    desc: 前端推荐集合
+    no: 1
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 后端精选
+    desc: 后端精选集合
+    no: 2
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 全栈开发
+    desc: 全栈开发精华
+    no: 3
+    banner: /images/1.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 技术热点
+    desc: 技术热点集合
+    no: 4
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02

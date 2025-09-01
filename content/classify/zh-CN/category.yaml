@@ -1,0 +1,32 @@
+type: category
+metas:
+  - key: 前端
+    desc: 前端相关
+    no: 1
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 后端
+    desc: 后端开发相关
+    no: 2
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 数据库
+    desc: 数据库技术相关
+    no: 3
+    banner: /images/1.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 运维
+    desc: 系统运维相关
+    no: 4
+    banner: /images/01.png
+    created: 2023-01-01
+    updated: 2023-01-02
+  - key: 移动开发
+    desc: 移动端开发相关
+    no: 5
+    banner: /images/18.png
+    created: 2023-01-01
+    updated: 2023-01-02
